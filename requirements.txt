@@ -6,3 +6,4 @@ langchain_experimental
 tabulate
 pypdf
 sentence-transformers
+faiss-cpu

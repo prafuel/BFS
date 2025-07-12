@@ -9,7 +9,7 @@ load_dotenv()
 
 llm = load_groq("llama-3.1-8b-instant")
 
-initialize_rag()
+vector_store = initialize_rag()
 
 st.set_page_config(page_title="Bajaj Finserv Chatbot", layout="wide")
 

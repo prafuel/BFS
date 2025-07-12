@@ -109,3 +109,5 @@ def initialize_rag():
     chunks = chunk_documents(documents)
     embeddings = get_embeddings()
     vector_store = create_vector_store(chunks, embeddings)
+
+    return vector_store
