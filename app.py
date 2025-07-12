@@ -3,13 +3,11 @@ import re
 import pandas as pd
 import streamlit as st
 from dotenv import load_dotenv
-from src.utils import pandas_agent, load_groq, load_vector_store, get_rag_response, initialize_rag
+from src.utils import pandas_agent, load_groq, vector_store, get_rag_response
 
 load_dotenv()
 
 llm = load_groq("llama-3.1-8b-instant")
-
-vector_store = initialize_rag()
 
 st.set_page_config(page_title="Bajaj Finserv Chatbot", layout="wide")
 

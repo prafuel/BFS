@@ -103,11 +103,9 @@ def get_rag_response(query: str, vector_store, llm):
     response = llm.invoke(prompt)
     return response.content
 
-def initialize_rag():
-    # Initialize RAG components
-    documents = load_documents()
-    chunks = chunk_documents(documents)
-    embeddings = get_embeddings()
-    vector_store = create_vector_store(chunks, embeddings)
+# Initialize RAG components
+documents = load_documents()
+chunks = chunk_documents(documents)
+embeddings = get_embeddings()
+vector_store = create_vector_store(chunks, embeddings)
 
-    return vector_store
