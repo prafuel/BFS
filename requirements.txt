@@ -1,0 +1,6 @@
+streamlit
+langchain-groq
+langchain
+langchain-community
+langchain_experimental
+tabulate
